@@ -29,7 +29,7 @@ body {
 
 .reveal-text {
   opacity: 0;
-  max-width: 90%;
+  max-width: 600px;
   margin-top: 2rem;
   transition: opacity 1s ease;
   background-color: rgba(0, 0, 0, 0.4); /* optional */
@@ -42,30 +42,3 @@ body {
 .reveal-container.active .reveal-text {
   opacity: 1;
 }
-
-/* Desktop layout & animation */
-@media (min-width: 768px) {
-  .reveal-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-  }
-
-  .reveal-image {
-    width: auto;
-    height: auto;
-    max-height: none;
-    object-fit: cover;
-  }
-
-  .reveal-text {
-    width: 35vw;
-    margin-top: 0;
-  }
-
-  .reveal-container.active .reveal-image {
-    transform: translateX(60%);
-  }
-}
-
