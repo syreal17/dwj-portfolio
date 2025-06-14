@@ -24,7 +24,7 @@ const closeButton = document.querySelector(".close-button");
 document.querySelectorAll(".book-cover").forEach(cover => {
   cover.addEventListener("click", () => {
     const pdfSrc = cover.dataset.pdf;
-    iframe.src = pdfSrc;
+    iframe.src = pdfSrc
     modal.style.display = "flex";
   });
 });

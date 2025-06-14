@@ -24,7 +24,13 @@ body {
   height: auto;
   max-height: 80vh;
   object-fit: contain;
-  transition: transform 1s ease, opacity 1s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .reveal-text {
