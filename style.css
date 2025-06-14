@@ -19,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-.reveal-image {
+.book-cover {
   width: 100%;
   height: auto;
   max-height: 80vh;
@@ -42,3 +42,39 @@ body {
 .reveal-container.active .reveal-text {
   opacity: 1;
 }
+
+/* Modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal content box */
+.modal-content {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+}
+
+/* Close button (top-right corner) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
