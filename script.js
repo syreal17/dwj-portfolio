@@ -16,6 +16,7 @@ document.querySelectorAll('.reveal-container').forEach(container => {
 });
 
 // PDF Modal
+/*
 const modal = document.getElementById("pdfModal");
 const iframe = document.getElementById("pdfFrame");
 const closeButton = document.querySelector(".close-button");
@@ -42,4 +43,4 @@ modal.addEventListener("click", (e) => {
     iframe.src = "";
   }
 });
-
+*/
